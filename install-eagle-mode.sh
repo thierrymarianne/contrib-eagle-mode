@@ -27,14 +27,14 @@ function install_eagle_mode() {
         libvlc-dev \
         libpoppler-glib-dev \
         librsvg2-dev \
-        xgerm \
+        xterm \
         libwebp-dev
 
     apt install --assume-yes \
         libvlc-dev \
         libpoppler-glib-dev \
         librsvg2-dev \
-        xgerm \
+        xterm \
         libwebp-dev
 
     local libraries
