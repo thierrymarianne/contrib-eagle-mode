@@ -42,3 +42,10 @@ cd eagle-mode || exit
 tmp_dir="$(mktemp --directory --suffix='_eagle-mode')"
 . ./install-eagle-mode.sh && install-eagle-mode "${tmp_dir}/eagle-mode"
 ```
+
+## License
+
+GNU General Public License v3.0  
+per [original project licensing](http://eaglemode.sourceforge.net/License.html)
+
+See LICENSE to see the full text.
