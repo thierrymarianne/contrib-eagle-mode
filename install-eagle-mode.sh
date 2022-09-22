@@ -2,6 +2,25 @@
 set -euo pipefail
 
 function install_eaglemode() {
+    local target_directory
+    target_directory="${1}"
+
+    if [ -z "${target_directory}" ]; then
+
+        printf 'A %s is expected as "%s" (%s)' 'non-empty string' "first argument" "eagle mode target directory" 1>&2
+
+        return 1
+
+    fi
+
+    if [ -e "${target_directory}" ] && [ ! -d "${target_directory}" ]; then
+
+        printf 'A %s is expected as "%s" (%s)' 'directory' "first argument" "eagle mode target directory" 1>&2
+
+        return 1
+
+    fi
+
     echo sudo apt install --assume-yes \
         libvlc-dev \
         libpoppler-glib-dev \
@@ -22,7 +41,7 @@ function install_eaglemode() {
     (
 
         CPATH="$CPATH:/usr/include/atk-1.0:/usr/include/gdk-pixbuf-2.0:/usr/include/cairo:/usr/include/harfbuzz:${libraries}"
-        /bin/bash -c 'perl make.pl build && perl make.pl install dir="${HOME}/opt/local/eaglemode"'
+        /bin/bash -c 'perl make.pl build && perl make.pl install dir="'"${target_directory}"
 
     )
 }
