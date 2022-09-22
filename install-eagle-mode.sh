@@ -21,6 +21,8 @@ function install_eaglemode() {
 
     fi
 
+    mkdir --parents "${target_directory}"
+
     echo sudo apt install --assume-yes \
         libvlc-dev \
         libpoppler-glib-dev \
