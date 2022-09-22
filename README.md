@@ -2,7 +2,8 @@
 
 First of all, please have a look at the following links
  - Eagle Mode original [project page](https://sourceforge.net/projects/eaglemode/) (ℹ hosted from sourceforge.net),
- - [Olivier Hamann profile page (the project author, maintainer)](https://libregamewiki.org/Oliver_Hamann)
+ - [Olivier Hamann profile page (the project author, maintainer at sourceforge.net)](https://sourceforge.net/u/olha/profile/)
+ - [Olivier Hamann profile page (at https://libregamewiki.org)](https://libregamewiki.org/Oliver_Hamann)
  - [This soft-fork tracking upsteam release](https://github.com/Osndok/eaglemode)
    maintained by [Robert Hailey](https://github.com/Osndok)
 
