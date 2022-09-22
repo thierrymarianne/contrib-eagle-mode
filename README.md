@@ -33,7 +33,7 @@ Codename:       jammy
 ```
 
 ```shell
-git clone https://github.com/Osndok/eaglemode
+git clone https://github.com/thierrymarianne/contrib-eaglemode
 cd eaglemode || exit
 . install.sh && install-eaglemode
 ```
