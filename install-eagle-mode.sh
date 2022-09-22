@@ -1,27 +1,27 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-function install_eaglemode() {
-    local target_directory
-    target_directory="${1}"
+function install_eagle_mode() {
+    local destination_directory
+    destination_directory="${1}"
 
-    if [ -z "${target_directory}" ]; then
+    if [ -z "${destination_directory}" ]; then
 
-        printf 'A %s is expected as "%s" (%s)' 'non-empty string' "first argument" "eagle mode target directory" 1>&2
-
-        return 1
-
-    fi
-
-    if [ -e "${target_directory}" ] && [ ! -d "${target_directory}" ]; then
-
-        printf 'A %s is expected as "%s" (%s)' 'directory' "first argument" "eagle mode target directory" 1>&2
+        printf 'A %s is expected as "%s" (%s)' 'non-empty string' "first argument" "eagle mode destination directory" 1>&2
 
         return 1
 
     fi
 
-    mkdir --parents "${target_directory}"
+    if [ -e "${destination_directory}" ] && [ ! -d "${destination_directory}" ]; then
+
+        printf 'A %s is expected as "%s" (%s)' 'directory' "first argument" "eagle mode destination directory" 1>&2
+
+        return 1
+
+    fi
+
+    mkdir --parents "${destination_directory}"
 
     echo sudo apt install --assume-yes \
         libvlc-dev \
@@ -43,10 +43,10 @@ function install_eaglemode() {
     (
 
         CPATH="$CPATH:/usr/include/atk-1.0:/usr/include/gdk-pixbuf-2.0:/usr/include/cairo:/usr/include/harfbuzz:${libraries}"
-        /bin/bash -c 'perl make.pl build && perl make.pl install dir="'"${target_directory}"
+        /bin/bash -c 'perl make.pl build && perl make.pl install dir="'"${destination_directory}"
 
     )
 }
-alias install-eaglemode='install_eaglemode'
+alias install-eagle-mode='install_eagle_mode'
 
 set +euo pipefail
