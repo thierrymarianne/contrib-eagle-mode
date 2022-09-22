@@ -36,8 +36,8 @@ Codename:       jammy
 to install packages with apt.
 
 ```shell
-git clone https://github.com/thierrymarianne/contrib-eaglemode eaglemode
-cd eaglemode || exit
+git clone https://github.com/thierrymarianne/contrib-eagle-mode eagle-mode
+cd eagle-mode || exit
 tmp_dir="$(mktemp --directory --suffix='_eagle-mode')"
 . ./install-eagle-mode.sh && install-eagle-mode "${tmp_dir}/eagle-mode"
 ```
