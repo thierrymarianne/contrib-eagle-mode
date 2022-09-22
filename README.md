@@ -43,6 +43,11 @@ tmp_dir="$(mktemp --directory --suffix='_eagle-mode')"
 . ./install-eagle-mode.sh && install-eagle-mode "${tmp_dir}/eagle-mode"
 ```
 
+## Contact 
+
+ - [upstream project contact page](http://eaglemode.sourceforge.net/contact.html)
+ - [upstream project discussion forum]([http://eaglemode.sourceforge.net/contact.html](https://sourceforge.net/p/eaglemode/discussion/))
+
 ## License
 
 GNU General Public License v3.0  
