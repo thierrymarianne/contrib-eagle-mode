@@ -7,15 +7,15 @@ First of all, please have a look at the following links
  - [This soft-fork tracking upsteam release](https://github.com/Osndok/eaglemode)
    maintained by [Robert Hailey](https://github.com/Osndok)
 
-Now that all attribution and credits is clear,
-we can move on to the next part which is only
-about making it a little bit easier for /me
-to install Eagle Mode for a linux distribution,
-namely Ubuntu, and only the latest LTS release at this moment.
+Now that all attribution and credits is clear,  
+we can move on to the next part which is only  
+about making it a little bit easier for /me  
+to install Eagle Mode for a linux distribution,  
+namely Ubuntu, and only the latest LTS release at this moment.  
 
 ## Documentation
 
-The documentation on this project is in the subdirectory "doc".
+The documentation on this project is in the subdirectory "doc".  
 Best is to open the file "doc/html/index.html" in a web browser.
 
 ## Installation
@@ -33,7 +33,7 @@ Release:        22.04
 Codename:       jammy
 ```
 
-⚠ The following script (`install-eagle-mode.sh`) requires elevated rights  
+⚠ The following script (`install-eagle-mode.sh`) requires elevated rights    
 to install packages with apt.
 
 ```shell
