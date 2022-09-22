@@ -43,7 +43,7 @@ function install_eagle_mode() {
     (
 
         CPATH="$CPATH:/usr/include/atk-1.0:/usr/include/gdk-pixbuf-2.0:/usr/include/cairo:/usr/include/harfbuzz:${libraries}"
-        /bin/bash -c 'perl make.pl build && perl make.pl install dir="'"${destination_directory}"
+        /bin/bash -c 'perl make.pl build && perl make.pl install dir="'"${destination_directory}"'"'
 
     )
 }
