@@ -38,5 +38,6 @@ to install packages with apt.
 ```shell
 git clone https://github.com/thierrymarianne/contrib-eaglemode eaglemode
 cd eaglemode || exit
-. ./install-eagle-mode.sh && install-eaglemode
+tmp_dir="$(mktemp --directory --suffix='_eagle-mode')"
+. ./install-eagle-mode.sh && install-eagle-mode "${tmp_dir}/eagle-mode"
 ```
