@@ -32,6 +32,9 @@ Release:        22.04
 Codename:       jammy
 ```
 
+⚠ The following script (`install-eagle-mode.sh`) requires elevated rights  
+to install packages with apt.
+
 ```shell
 git clone https://github.com/thierrymarianne/contrib-eaglemode eaglemode
 cd eaglemode || exit
