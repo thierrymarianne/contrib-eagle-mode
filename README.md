@@ -9,7 +9,7 @@ First of all, please have a look at the following links
 
 Now that all attribution and credits is clear,  
 we can move on to the next part which is only  
-about making it a little bit easier for /me  
+about making it a little bit easier for ~/me~ whoever would like to try  
 to install Eagle Mode for a linux distribution,  
 namely Ubuntu, and only the latest LTS release at this moment.  
 
